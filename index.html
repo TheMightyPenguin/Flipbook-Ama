@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta name="viewport" content="width = 1050, user-scalable = no" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Francois+One|Indie+Flower" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+  <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+  <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+  <script type="text/javascript" src="lib/zoom.min.js"></script>
+</head>
+<body>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+
+      <div class="page custom-cover-page">
+        <h1 class="text-center">Feliz Cumpleaños!!</h1>
+        <img class="img-responsive frame" src="pics/foto9.jpg" alt="">
+      </div>
+
+      <div class=" page custom-page page-border">
+        <img class="img-responsive frame top left" src="pics/foto3.jpg" alt="">
+        <h2 class="text-center">21 años de locuras!</h2>
+        <img class="img-responsive frame right bottom" src="pics/foto3.jpg" alt="">
+      </div>
+
+      <div class=" page custom-page">
+        <img class="img-responsive frame top left" src="pics/foto5.jpg" alt="">
+        <h2 class="text-center">Taking me places!</h2>
+        <img class="img-responsive frame bottom right" src="pics/foto6.jpg" alt="">
+      </div>
+
+      <div class=" page custom-page page-border">
+        <img class="img-responsive frame top left" src="pics/foto7.jpg" alt="">
+        <h2 class="text-center">Otro cumpleaño juntos, de muchos mas!</h2>
+        <img class="img-responsive frame right bottom" src="pics/foto8.jpg" alt="">
+      </div>
+
+      <div class=" page custom-page">
+        <img class="img-responsive frame top left" src="pics/foto10.jpg" alt="">
+        <h2 class="text-center">Have a great one!!</h2>
+        <img class="img-responsive frame bottom right" src="pics/foto11.jpg" alt="">
+      </div>
+
+      <div class=" page custom-page">
+        <img class="img-responsive frame top left" src="pics/foto12.jpg" alt="">
+        <h2 class="text-center"></h2>
+        <img class="img-responsive frame bottom right" src="pics/foto13.jpg" alt="">
+      </div>
+
+      <div class=" page custom-page">
+        <img class="img-responsive frame top left" src="pics/foto14.jpg" alt="">
+        <h2 class="text-center">Honeeyyyyyyyyyyy</h2>
+        <img class="img-responsive frame bottom right" src="pics/foto15.jpg" alt="">
+      </div>
+
+
+      <div class=" page custom-page">
+        <h2 class="text-center">May the force be with you.</h2>
+        <img class="img-responsive frame center-img" src="pics/starwars.jpg" alt="">
+      </div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			// elevation: 50,
+
+			// Enable gradients
+
+			gradients: true,
+			// Auto center this flipbook
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['lib/turn.js'],
+	nope: ['lib/turn.html4.min.js'],
+	both: ['css/basic.css', 'css/custom.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
